@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+  }
+
+ .paragraph{
+    font-family: Cabin, sans-serif;
+    font-size: 14.4px;
+    font-weight: 400;
+    Line-height: 16px;
+    color: rgb(171, 188, 196);
+ }
+ .list-link:hover{
+    text-decoration: underline;
+ }
+ .list-link{
+    text-decoration: underline;
+ }
+
+ .footer{
+    padding: 50px;
+ }
