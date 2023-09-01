@@ -15,7 +15,7 @@ scroll-behavior: smooth;
     position: relative;
     background-image: url("https://www.asd.gov.au//sites/default/files/2022-03/history-backdrop_3.png");
     background-attachment:fixed;
-    background-size: contain;
+    background-size:cover ;
   
   }
 .navbar-container{
@@ -74,7 +74,7 @@ padding: 35px;
     margin-top: 10px;
   }
  .hero{
-    height: 500px;
+    height: 350px;
     background-color: rgba(8, 10, 12, 0.96)
    
   } 
@@ -118,13 +118,42 @@ padding: 35px;
     text-decoration: none;
 
 }
-/* .about:hover > a {
+.link-arrow{
+  color: #006db7;
+}
+
+.about:hover {
+    background-color: #006db7;
+
+}
+.about1 {
+    background-color:rgb(255, 255, 255);
+
+}
+.about1:hover {
+    background-color: #006db7;
+
+}
+.about1:hover .about-link{
     color:  rgb(255, 255, 255);
     font-weight: 600;
     text-decoration: none;
     background-color: #006db7;
 
-} */
+}
+.about:hover .about-link{
+    color:  rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #006db7;
+
+}
+.about:hover  .link-arrow{
+    color:  rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+
+}
 
 
 
@@ -178,22 +207,115 @@ padding: 35px;
 .report{
   padding: 30px 10px;
 }
-.box-1{
-    background-color: #000;
-    width: 474;
-    height: 200px;
-    margin: 10px;
-    padding: 15px 10px;
+/* .box-1-cover{
+  width: 100%;
+  padding-right: 10px;
+  padding-top: 10px;
+} */
+/* .box-1-cover:hover{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  bottom: 0;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  position: relative;
+  right: 0;
+} */
+.box-wrapper{
+  background-color: #000;
+  width: 374px;
+  height: 280px;
+  margin: 10px;
+  padding: 15px 10px;
 }
-.box-1 > h1{
-    font-size: 16px;
+/* .box-1{
+    cursor: pointer;
+   
+    
+    border-right: 10px solid #006db7;
+    border-bottom: 10px solid #006db7;
+
+    bottom: 0
+} */
+.bottom{
+  height: 12px;
+  width: 180px;
+  background-color: #006db7;
+  position: absolute;
+  right: 50.3%;
+  bottom: 45.35%;
+  display: none;
+  transition: linear display 0.30ms;
+  margin-top: 9px;
+}
+.right{
+  height: 180px;
+  width: 12px;
+  position: relative;
+  right: -100%;
+  bottom: 55%;
+  background-color: #006db7;
+  display: none;
+  margin-left: 7px;
+  transition: linear display 0.30ms;
+}
+.bottom2{
+  height: 12px;
+  width: 180px;
+  background-color: #006db7;
+  position: absolute;
+  right: 4.3%;
+  bottom: 45.35%;
+  display: none;
+  margin-top: 5px;
+  webkit-transition: display ease 0.30s;
+}
+.right2{
+  height: 180px;
+  width: 12px;
+  position: relative;
+  right:-100%;
+  bottom: 28%;
+  background-color: #006db7;
+  display: none;
+  margin-left: 5px;
+  transition: linear display 0.30ms;
+}
+.box-wrapper:hover{
+  cursor: pointer;
+}
+.box-wrapper:hover .bottom,
+.box-wrapper:hover .right{
+  display: block;
+
+}
+.box-wrapper:hover .bottom2,
+.box-wrapper:hover .right2{
+  display: block;
+}
+
+.box-wrapper:hover > .box-link{
+    text-decoration: underline;
+    cursor: pointer;
+    /* border-right: 2px solid red;
+  border-bottom: 2px solid red; */
+}
+.box-1{
+    
+}
+
+.box-1 > div > a{
+    font-size: 32px;
     font-weight: 600px;
     color:rgb(255, 255, 255);
+    line-height: 40px;
 }
-.box-1 > p {
+.box-1 > div > a > p {
     font-size: 14px;
     font-weight: 400px;
     color:rgb(255, 255, 255);
+    line-height: 21px;
 }
 .black-chevron{
     align-self: flex-end;
@@ -201,7 +323,8 @@ padding: 35px;
 }
 
 .history-timeline{
-  background-color: rgba(0, 109, 183,0.9);
+  background-color: rgba(0, 109, 183,0.96);
+  opacity: 0.96;
   padding: 20px 10px;
   height: 500px;
 
