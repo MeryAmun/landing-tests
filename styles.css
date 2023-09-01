@@ -7,15 +7,24 @@ padding: 0;
 margin: 0;
 scroll-behavior: smooth;
   }
+  body {
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
   ::-webkit-scrollbar {
     display: none;
   }
 
   .main{
+    width: 100%;
+    height: 100%;
     position: relative;
     background-image: url("https://www.asd.gov.au//sites/default/files/2022-03/history-backdrop_3.png");
     background-attachment:fixed;
     background-size:cover ;
+    padding: 20px 10px;
   
   }
 .navbar-container{
@@ -185,12 +194,40 @@ padding: 35px;
 
 }
 
-.home__reviewVideo>video:hover {
+/* .home__reviewVideo > video:hover {
     transition: transform 0.30s ease-in-out;
     transform: scale(1.010) !important;
 
+} */
+.home__reviewVideo:hover{
+  border: 2px solid yellowgreen;
 }
+video:hover{
+    transition: transform 0.30s ease-in-out;
+    transform: scale(1.010) !important;
+    cursor: pointer;
+    box-shadow: 0 8px 25px -8px #000;
+    opacity: 0.8;
 
+}
+video:hover .home__reviewVideoIcon{
+    transition: transform 0.30s ease-in-out;
+    transform: scale(1.010) !important;
+    cursor: pointer;
+    box-shadow: 0 8px 25px -8px #000
+
+}
+.home__heroAdd:hover{
+  /* border-color: #5e50ee!important; */
+  color: #fff!important;
+  box-shadow: 0 8px 25px -8px #f24443;
+}
+.home__reviewVideoIcon:hover {
+  transition: transform 0.30s ease-in-out;
+  transform: scale(1.010) !important;
+  cursor: pointer;
+  
+} 
 .home__reviewVideoIcon {
     position: relative;
     left: -240px;
@@ -207,21 +244,7 @@ padding: 35px;
 .report{
   padding: 30px 10px;
 }
-/* .box-1-cover{
-  width: 100%;
-  padding-right: 10px;
-  padding-top: 10px;
-} */
-/* .box-1-cover:hover{
-  width: 100%;
-  height: 60px;
-  position: relative;
-  bottom: 0;
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
-  position: relative;
-  right: 0;
-} */
+
 .box-wrapper{
   background-color: #000;
   width: 374px;
@@ -354,6 +377,7 @@ padding: 35px;
     text-decoration: underline;
  }
  .quiz-section{
+  width: 100%;
   background-color: rgba(0, 109, 183,0.8);
   height: 200px;
 
@@ -376,4 +400,30 @@ padding: 35px;
     width: 100vw;
   
     margin-bottom: 0;
+ }
+
+ @media screen  and (max-width:670px){
+  .section1{
+    flex-direction: column;
+  }
+  .section2{
+    flex-direction: column-reverse;
+  }
+
+  .right,.right2,.bottom,.bottom2{
+    display: none;
+  }
+  .box-wrapper{
+    width: 20%;
+    height: 280px;
+    margin: 10px;
+    padding: 10px 5px;
+  }
+  .history-timeline{
+    height: 100%;
+    width: 100%;
+  }
+  .footer{
+    width: 100%;
+  }
  }
