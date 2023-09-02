@@ -7,11 +7,13 @@
     <title>Landing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="main m-0 p-0 w-100">
+    <div class="main m-0 p-0 w-100 h-100">
         <div class="d-flex flex-column justify-content-center align-items-center w-100">
             <div class="navbar-container d-flex flex-column justify-content-center align-items-center w-100">
                 <div class="d-flex flex-column  justify-content-around align-items-center w-100 my-3">
@@ -118,27 +120,34 @@
                     </div>
               </div>
             </div>
-            <div class="who d-flex flex-column justify-content-between align-items-center px-2 w-100">
-              <div class="section1 d-flex  justify-content-around align-items-center px-2 w-100">
-                <div className="home__review">
-                    <div className="home__reviewVideo">
-                      <img width="420" height="340" controls src="assets/redspice-cover.png"></img>
-                    </div>
-              </div>
-                <div class="history d-flex flex-column justify-content-center align-items-start who-main">
-                    <h1 class="my-2">REDSPICE</h1>
-                    <p class="mb-2">REDSPICE is the most significant single investment in the Australian Signals Directorate over its 75-year history. It will deliver forward-looking capabilities essential to maintaining Australia’s strategic advantage and capability edge over the coming decade and beyond.</p>
-                    <div class="d-flex about justify-content-center rounded-pill align-items-center mt-2 link-button py-2 px-4">
-                        <a href="/" class="about-link">Learn more</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#006db7"
-                            class="bi bi-chevron-right ms-1 link-arrow" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                    </div>
+        </div>
+        <!-- end of who begining of redspice -->
+        <!-- red spices -->
+        <div class="">
+            <div class="who d-flex flex-column justify-content-between align-items-center px-2 w-100 bg-light">
+                <div class="section1 d-flex  justify-content-around align-items-center px-2 w-100">
+                  <div className="home__review">
+                      <div className="home__reviewVideo">
+                        <img width="420" height="340" controls src="assets/redspice-cover.png"></img>
+                      </div>
                 </div>
-            </div>
-            <div class="who d-flex flex-column justify-content-between align-items-center px-2 w-100">
+                  <div class="history d-flex flex-column justify-content-center align-items-start who-main">
+                      <h1 class="my-2">REDSPICE</h1>
+                      <p class="mb-2">REDSPICE is the most significant single investment in the Australian Signals Directorate over its 75-year history. It will deliver forward-looking capabilities essential to maintaining Australia’s strategic advantage and capability edge over the coming decade and beyond.</p>
+                      <div class="d-flex about justify-content-center rounded-pill align-items-center mt-2 link-button py-2 px-4">
+                          <a href="/" class="about-link">Learn more</a>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#006db7"
+                              class="bi bi-chevron-right ms-1 link-arrow" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                      </div>
+                  </div>
+              </div>
+        </div>
+        <!-- careers -->
+        <div class="">
+            <div class="who d-flex flex-column justify-content-between align-items-center px-2 w-100 bg-light">
                 <div class="section2 d-flex  justify-content-around align-items-center px-2 w-100">
                   <div class="history d-flex flex-column justify-content-center align-items-start who-main">
                       <h1 class="my-2">Careers</h1>
@@ -161,7 +170,9 @@
                       </div>
                 </div>
               </div>
-              <div class="section1 report d-flex justify-content-around align-items-start px-4 w-100">
+        </div>
+        <div class="">
+            <div class="section1 report d-flex justify-content-around align-items-start px-4 w-100 bg-light">
                 <div class="box-wrapper w-100">
                     <div class="box-1  d-flex flex-column justify-content-between align-items-center">
                         <div class="d-flex flex-column justify-content-between align-items-center">
@@ -203,7 +214,7 @@
                           <div class="history d-flex flex-column justify-content-center align-items-start who-main">
                               <h1 class="my-2 text-light">Our History Timeline</h1>
                               <p class="mb-2 text-light">For 75 years, ASD has collected intelligence about foreign adversaries while keeping our own national secrets safe. Explore ASD’s history and trace its origins back to the Second World War, when Australian Navy, Army and Air Force personnel were brought together to intercept and decode radio signals.</p>
-                              <div class="d-flex about1 bg-light justify-content-center rounded-pill align-items-center mt-2 link-button px-4 py-2">
+                              <div class="d-flex about1 justify-content-center rounded-pill align-items-center mt-2 link-button px-4 py-2">
                                   <a href="/" class="about1-link">View Timeline</a>
                                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="15" fill="#006db7"
                                       class="bi bi-chevron-right ms-1 link-arrow" viewBox="0 0 16 16">
@@ -218,7 +229,7 @@
                             </div>
                       </div>
                       </div>
-                </div>
+        </div>
              <div class="">
                 <div class="history-timeline d-flex justify-content-between align-items-center bg-light">
                     <div class="section2 d-flex justify-content-around align-items-center px-2 w-100">
@@ -249,14 +260,14 @@
                         </div>
                         <div class="d-flex justify-content-center  align-items-center mt-2 link-button_quiz">
                             <a href="/" class="about-link">Start Career Quiz</a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F7F9FD"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(255,255,255)"
                                 class="bi bi-chevron-right ms-1 link-arrow" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                         </svg>
                     </div>
               </div>
-            <div class="w-100">
+          
                 <div class="footer d-flex flex-column justify-content-center align-items-center">
                     <div class="footer__logos section1 d-flex justify-content-around align-items-center w-100 my-3">
                         <a href="/">
@@ -338,7 +349,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+           
     </div>
 </body>
 
