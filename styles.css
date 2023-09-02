@@ -10,7 +10,7 @@ margin: 0;
 scroll-behavior: smooth;
   }
   body {
-    overflow-y: scroll;
+
     padding: 0;
     margin: 0;
     width: 100%;
@@ -30,11 +30,14 @@ scroll-behavior: smooth;
     padding: 20px 10px;
   
   }
-.navbar-container{
+.navbar{
     background-color: #000;  
 
 }
-
+.nav-main{
+  /* border: 2px solid yellowgreen; */
+  height: 250px;
+}
 
   .navbar__links {
     display: flex;
@@ -411,11 +414,73 @@ video:hover .home__reviewVideoIcon{
  }
 
  @media screen  and (max-width:670px){
+  /* .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  .nav-main{
+    flex-direction: row;
+    border: 2px solid yellowgreen;
+    height: 100%;
+  }
+  .nav-logos-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero{
+    height: 100%;
+    
+ }
+  .hero-main{
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+ }
+
+ .hero-main > h1{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.hero-main > h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.history > h1{
+  font-weight: 600;
+  font-size: 42px;
+  color: rgb(34, 34, 34);
+}
+.history > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+.history > div{
+  color: #006db7;
+  background-color: transparent;
+border: 2px solid #006db7;
+}
+.history > div > a {
+  color: #006db7;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+}
   .section1{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .section2{
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 
   .right,.right2,.bottom,.bottom2{
