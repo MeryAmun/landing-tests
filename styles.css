@@ -339,12 +339,14 @@ video:hover .home__reviewVideoIcon {
   position: relative;
   right: -100%;
   bottom: 60.5%;
-  background-color: #006db7;
+  background-color: rgb(0, 109, 183);
   opacity: 0;
   margin-left: 12px;
   transition: opacity ease-in-out 0.30s;
 }
-
+.close-btn{
+margin-right: 10px;
+}
 .bottom2 {
   height: 12px;
   width: 180px;
